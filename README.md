@@ -1,27 +1,23 @@
-# 🛡️ Security AI Assistant | v1.0
+# 🛡️ Security AI Assistant (Terminal Edition)
 
-A specialized, terminal-inspired AI interface designed for security researchers and ethical hackers. This project leverages the **Gemini 1.5 Pro API** to provide contextual security analysis, vulnerability explanations, and code auditing assistance.
+An advanced, terminal-styled interface designed for automated security auditing and threat analysis. This project leverages **Mistral AI** via **Cloudflare Workers** to provide high-speed, intelligent security insights directly through a browser-based shell.
+
+## 🚀 Technical Stack
+* **Intelligence**: Mistral AI (7B Instruct)
+* **Infrastructure**: Cloudflare Workers (Serverless Edge Computing)
+* **Frontend**: HTML5, CSS3, Vanilla JavaScript
+* **Styling**: Fira Code typeface for an authentic terminal aesthetic
+
+## 🛠️ Features
+* **Real-time Clock**: Synchronized system time tracking in the terminal header.
+* **Interactive Shell**: Fully functional input area for security queries.
+* **Cursor Tracking**: Dynamic radial glow effect following user interaction.
+* **Responsive Design**: Optimized for both desktop and mobile terminal views.
+
+## 📂 Project Structure
+* `index.html`: Shell structure and UI elements.
+* `script.js`: Mistral AI integration and terminal logic.
+* `style.css`: Terminal-dark theme and UI animations.
 
 ---
-
-## 🚀 Overview
-The Security AI Assistant is a standalone web application that acts as a technical companion for security audits. Unlike general-purpose chatbots, it is fine-tuned via system instructions to prioritize cybersecurity frameworks, networking protocols, and secure coding practices.
-
-
-
-## ✨ Key Features
-- **Security-Focused Intelligence**: Fine-tuned for vulnerability research, exploit explanation, and mitigation strategy.
-- **Terminal UI/UX**: A sleek, dark-themed terminal interface that mirrors real-world security tools.
-- **Serverless Architecture**: Built using a serverless approach to minimize latency and improve scalability.
-- **Real-time Processing**: Fast, multi-turn conversations with context-aware responses.
-
-## 🛠️ Technical Stack
-- **Frontend**: HTML5, CSS3 (Custom Properties & Animations), JavaScript (ES6+).
-- **AI Core**: Google Gemini 1.5 Pro API.
-- **Logic**: Async/Await fetch architecture for API communication.
-- **Styling**: Fira Code typography for authentic developer aesthetics.
-
-## ⚙️ Installation & Usage
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/artazemi/security-ai-assistant.git](https://github.com/artazemi/security-ai-assistant.git)
+*Maintained by Art Azemi | Security Student @ Kolegji AAB*
