@@ -1,0 +1,94 @@
+:root {
+    /* Using your exact color palette */
+    --primary: #d1c4e9;
+    --primary-glow: rgba(209, 196, 233, 0.25);
+    --text-bright: #ffffff;
+    --text-dim: #cfd8dc;
+    --container-bg: rgba(10, 10, 10, 0.85);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    /* Using your exact background from the old site */
+    background: url('assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000;
+    font-family: 'Fira Code', monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-bright);
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+#cursor-glow {
+    position: fixed;
+    top: 0; left: 0;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(179, 157, 219, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.terminal-container {
+    width: 90%;
+    max-width: 850px;
+    height: 85vh;
+    background: var(--container-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #90a4ae;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+.chat-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 0;
+    font-size: 0.95rem;
+}
+
+.bot-msg { color: var(--primary); margin-bottom: 15px; border-left: 2px solid var(--primary); padding-left: 10px; }
+.user-msg { color: #fff; opacity: 0.8; margin-bottom: 15px; padding-left: 10px; }
+
+.input-area {
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prompt { color: var(--primary); font-weight: bold; }
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: 'Fira Code', monospace;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.A. | Security Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cursor-glow"></div>
+
+    <div class="terminal-container">
+        <header class="terminal-header">
+            <div class="h-left"><span class="user">art@analyst:~$</span></div>
+            <div class="h-center"><span class="command">./security_analyst.sh</span></div>
+            <div class="h-right"><span class="time" id="time">00:00:00</span></div>
+        </header>
+
+        <div class="chat-wrapper" id="chat-wrapper">
+            <div class="bot-msg">[SYSTEM] Security Intelligence initialized. Awaiting query...</div>
+        </div>
+
+        <div class="input-area">
+            <span class="prompt">art@analyst:~$</span>
+            <input type="text" id="user-input" autocomplete="off" autofocus placeholder="Analyze target..." onkeydown="if(event.key==='Enter') sendMessage()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
